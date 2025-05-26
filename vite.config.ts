@@ -5,21 +5,20 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/%REPLACE_ME%/', // Set base for GitHub Pages deployment
+  base: '/fruitaddict/', // Set base for GitHub Pages deployment
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['vite.svg'],
-      manifest: {
-        name: '%REPLACE_ME%',
-        short_name: '%REPLACE_ME%',
-        description: '%REPLACE_ME%',
+      manifest: {        name: 'FruitAddict',
+        short_name: 'FruitAddict',
+        description: 'A fruit-themed web application game',
         theme_color: '#242424',
         background_color: '#242424',
         display: 'standalone',
-        start_url: '/%REPLACE_ME%/',
+        start_url: '/fruitaddict/',
         icons: [
           {
             src: 'vite.svg',
