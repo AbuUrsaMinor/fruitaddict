@@ -12,7 +12,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['vite.svg'],
-      manifest: {        name: 'FruitAddict',
+      manifest: {
+        name: 'FruitAddict',
         short_name: 'FruitAddict',
         description: 'A fruit-themed web application game',
         theme_color: '#242424',
